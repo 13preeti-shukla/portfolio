@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+  
+}
+.container{
+    padding: 10px 10%;
+}
+.container h2 span{
+    color: #ff004f;
+}
+nav{
+    display: flex;
+    align-items:right;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    margin: 10px 20px;
+    
+    
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+     right: 100px;
+    }
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    color: #fff;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.p{
+    font-size: 30px;
+} 
+.header1{
+    margin-top: 20%;
+    font-size: 30%;
+}
+.header1 h1{
+font-size: 60px;
+margin-top: 20px;
+}
+.header1 h1 span{
+    color: #ff004f;
+}
+/* home */
+.home-page{
+
+    background-image: url("image.png.jpeg");
+    width: 100%;
+    height: 370px;
+    background-size: cover;
+    padding: 29px; 
+
+/* 
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-position:right; */
+}
+
+section{
+    /* padding: 100px; */
+}
+
+/* about */
+#about{
+    display: flex;
+    padding: 90px 0;
+    color:#ababab;
+}
+.row{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.about1{
+    flex-basis: 35%;
+}
+.about1 img{
+    width: 60%;
+    border-radius: 15px;
+}
+.about2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 60%;
+    font-weight: 600;
+    color: #fff;
+}
+.titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.titles p {
+    display: inline-block; /* Keep them in a row */
+    margin-right: 20px; /* Add space to the right of each tab */
+    padding: 10px 15px; /* Add padding inside each tab */
+    cursor: pointer; /* Change the cursor to a pointer when hovering */
+}
+
+.titles p:last-child {
+    margin-right: 0; /* Remove the margin on the last tab */
+}
+
+.tab{
+color: #ff004f;
+
+
+}
+
+.btn{
+    color: #ff004f;
+    background-color: #ff004f;
+}
+.tablinks{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tablinks::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position:absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tablinks.active-link::after{
+    width: 50%;
+}
+.tab-contents{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color:#ff004f;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+
+}
+/* my projects */
+#project{
+    padding: 30px 0;
+}
+.project-list{
+    display:flex;
+    justify-content:space-between;
+    width: 100%;
+    height: 80%;
+    margin: 10px;
+    
+
+}
+
+
+.project-list div{
+
+    height: 200px;
+    width: 307px;
+    background: #262626;
+    margin:10 5 10 70px;
+    padding:40px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    transition: 0.5s,transform 0.5s;
+}
+.project-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.project-list div:hover{
+    background:#ff004f;
+    transform: translateY(-10px);
+}
+.btn3{
+    background-color: #ff004f;
+
+}
+/* contact */
+.contact-left{
+flex-basis:35%;
+}
+.contact-right{
+    flex-basis: 60%;
+
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left.btn.btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn.btn2{
+    display:-ms-inline-flexbox;
+    background:#ff004f;
+    border-radius: 10px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0%;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn3{
+    border-radius: 1vmin;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.btn3:hover{
+    background-color: #262626;
+}
+.copyright{
+    
+width: 100%;
+text-align: center;
+padding: 25px 0;
+background-color: #262626;
+font-weight: 300;
+margin-top: 20px;
+}
+.copyright .fa-solid fa-heart{
+    color: #ff004f;
+}
+/* ------css for small screen------ */
+@media only screen add (max-width:600px){
+    #home{
+        background-image: url("image.png.jpeg");
+
+    }
+    .header1{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header1 h1{
+        font-size: 30px;
+    }
+    
+}
